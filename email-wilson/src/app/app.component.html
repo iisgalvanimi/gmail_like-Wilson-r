@@ -1,19 +1,19 @@
 <div class="container">
   <form class="jumbotron"></form>
     <div class="form-group" >
-      <input name="email">
+      <input name="email" #email>
     </div>
 
     <div class="form-group" >
-      <input name="oggetto">
+      <input name="oggetto" #oggetto>
     </div>
 
     <div class="form-group" >
-      <input name="testo">
+      <input name="testo" #testo>
     </div>
 
     <div class="form-group" >
-      <button>Invia</button>
+      <button (click)="aggiungiEmail(email, oggetto, testo)">Invia</button>
     </div>
 
 
